@@ -37,8 +37,8 @@
     <p>💬 Ask me about anything related to data science, machine learning, or statistical analysis. I love discussing the fascinating world of data!</p>
     <p>📫 How to reach me:</p>
     <ul>
-        <li>Email: your.email@example.com</li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/yourlinkedinprofile" style="color: white;">Your LinkedIn Profile</a></li>
+        <li>Email: your.duttagupta.siddharth@gmail.com</li>
+        <li>LinkedIn: <a href="www.linkedin.com/in/siddharth-duttagupta-16a9a221a" style="color: white;">Your LinkedIn Profile</a></li>
     </ul>
     <p>😄 Pronouns: He/Him</p>
     <p>⚡ Fun fact: I enjoy visualizing complex data in creative ways and am a firm believer in the power of storytelling through data.</p>

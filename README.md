@@ -59,6 +59,12 @@ I am a Data Science Enthuist <img src="https://media.giphy.com/media/WUlplcMpOCE
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftexcel/microsoftexcel-original.svg" title="MS Excel" alt="MS Excel" width="40" height="40" />&nbsp;
   <!-- Git -->
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original-wordmark.svg" title="Git" alt="Git" width="40" height="40" />&nbsp;
+   <!-- CSS -->
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain-wordmark.svg" title="CSS3" alt="CSS" width="40" height="40" />&nbsp;
+ <!-- JavaScript -->
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40" />&nbsp;
+ <!-- Bootstrap -->
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" title="Bootstrap" alt="Bootstrap" width="40" height="40" />&nbsp;
 
   </div>
 ---

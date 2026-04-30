@@ -4,11 +4,11 @@
 
 # 🚀 Siddharth Duttagupta
 
-### ⚡ AI Engineer | Full Stack Developer | Problem Solver
+### ⚡ AI Engineer | Full Stack Developer | Building Intelligent Systems
 
 <img src="https://komarev.com/ghpvc/?username=siddharth-2002&style=for-the-badge&color=blue"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=00F7FF&center=true&vCenter=true&width=600&lines=Building+AI-Powered+Applications;Full+Stack+Developer;GenAI+%7C+LLMs+%7C+DSA+Enthusiast;Turning+Ideas+Into+Reality"/>
+<img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=00F7FF&center=true&vCenter=true&width=700&lines=AI+Engineer;Full+Stack+Developer;GenAI+%7C+LLMs+%7C+LangGraph;Startup+Builder;Always+Learning+Always+Shipping"/>
 
 </div>
 

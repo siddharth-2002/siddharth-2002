@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Siddharth's Dino Runner</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a2e;
+    font-family: 'Courier New', monospace;
+    color: #eee;
+  }
+  h1 { margin-bottom: 4px; }
+  p { color: #aaa; margin-top: 0; }
+  canvas {
+    background: #f7f7f7;
+    border: 3px solid #eee;
+    border-radius: 8px;
+  }
+  #score { margin-top: 10px; font-size: 20px; }
+  #hint { font-size: 14px; color: #888; margin-top: 6px; }
+</style>
+</head>
+<body>
+  <h1>🦖 Dino Runner</h1>
+  <p>Press SPACE or tap to jump</p>
+  <canvas id="game" width="600" height="200"></canvas>
+  <div id="score">Score: 0</div>
+  <div id="hint">Refresh to restart after Game Over</div>
+
+<script>
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+const scoreEl = document.getElementById('score');
+
+const ground = 160;
+let dino = { x: 40, y: ground - 40, w: 40, h: 40, vy: 0, jumping: false };
+let obstacles = [];
+let speed = 6;
+let score = 0;
+let frame = 0;
+let gameOver = false;
+
+function jump() {
+  if (!dino.jumping && !gameOver) {
+    dino.vy = -12;
+    dino.jumping = true;
+  }
+}
+
+document.addEventListener('keydown', e => {
+  if (e.code === 'Space') { e.preventDefault(); jump(); }
+});
+canvas.addEventListener('mousedown', jump);
+canvas.addEventListener('touchstart', jump);
+
+function spawnObstacle() {
+  const h = 20 + Math.random() * 30;
+  obstacles.push({ x: canvas.width, y: ground - h, w: 20, h: h });
+}
+
+function update() {
+  if (gameOver) return;
+
+  frame++;
+  if (frame % 90 === 0) spawnObstacle();
+
+  // dino physics
+  dino.vy += 0.6;
+  dino.y += dino.vy;
+  if (dino.y > ground - dino.h) {
+    dino.y = ground - dino.h;
+    dino.vy = 0;
+    dino.jumping = false;
+  }
+
+  // obstacles
+  obstacles.forEach(o => o.x -= speed);
+  obstacles = obstacles.filter(o => o.x + o.w > 0);
+
+  // collision
+  for (const o of obstacles) {
+    if (
+      dino.x < o.x + o.w &&
+      dino.x + dino.w > o.x &&
+      dino.y < o.y + o.h &&
+      dino.y + dino.h > o.y
+    ) {
+      gameOver = true;
+    }
+  }
+
+  score++;
+  if (score % 500 === 0) speed += 0.5;
+  scoreEl.textContent = 'Score: ' + Math.floor(score / 5);
+}
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // ground line
+  ctx.strokeStyle = '#333';
+  ctx.beginPath();
+  ctx.moveTo(0, ground);
+  ctx.lineTo(canvas.width, ground);
+  ctx.stroke();
+
+  // dino
+  ctx.fillStyle = '#333';
+  ctx.fillRect(dino.x, dino.y, dino.w, dino.h);
+
+  // obstacles
+  ctx.fillStyle = '#2a9d8f';
+  obstacles.forEach(o => ctx.fillRect(o.x, o.y, o.w, o.h));
+
+  if (gameOver) {
+    ctx.fillStyle = '#e63946';
+    ctx.font = '28px monospace';
+    ctx.fillText('GAME OVER', canvas.width / 2 - 80, canvas.height / 2);
+  }
+}
+
+function loop() {
+  update();
+  draw();
+  requestAnimationFrame(loop);
+}
+
+loop();
+</script>
+</body>
+</html>

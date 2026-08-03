@@ -50,6 +50,14 @@ Goal: Build startup-level AI products
 
 ---
 
+# 🎯 WHAT I'M UP TO
+
+<!-- AGENT-START -->
+<i>Building things, breaking things, learning things. Check back soon — this section updates itself.</i>
+<!-- AGENT-END -->
+
+---
+
 # 🐍 CONTRIBUTION SNAKE
 
 <div align="center">

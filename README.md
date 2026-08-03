@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://art.pixilart.com/ffe257722c106f9.gif" width="70"/>
+<img src="https://media.tenor.com/uDj1hgakM9MAAAAj/mario-run-mario.gif" width="90"/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=220&section=header&text=Siddharth%20Duttagupta&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 

@@ -40,3 +40,46 @@ Role: AI Engineer + Full Stack Developer
 Location: India 🇮🇳
 Focus: Generative AI | LLM Agents | Scalable Systems
 Goal: Build startup-level AI products
+```
+
+---
+
+# 🐍 CONTRIBUTION SNAKE
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/siddharth-2002/siddharth-2002/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/siddharth-2002/siddharth-2002/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/siddharth-2002/siddharth-2002/output/github-contribution-grid-snake.svg" />
+</picture>
+
+</div>
+
+---
+
+# 🦖 TAKE A BREAK — PLAY DINO
+
+<div align="center">
+
+<a href="https://siddharth-2002.github.io/dino-game/" target="_blank">
+  <img src="https://img.shields.io/badge/▶_PLAY_DINO_RUNNER-2a9d8f?style=for-the-badge" />
+</a>
+
+<br/><br/>
+<sub>Built it myself — jump over obstacles, score climbs the longer you survive 🚀</sub>
+
+</div>
+
+---
+
+# 📊 GITHUB STATS
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=siddharth-2002&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=siddharth-2002&theme=tokyonight&hide_border=true" height="165" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=siddharth-2002&layout=compact&theme=tokyonight&hide_border=true" height="165" />
+
+</div>

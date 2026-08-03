@@ -21,11 +21,10 @@ import sys
 import json
 import urllib.request
 
-import anthropic
-
 GITHUB_USERNAME = os.environ["GITHUB_REPOSITORY"].split("/")[0]
 GITHUB_TOKEN = os.environ["GH_TOKEN"]
-ANTHROPIC_API_KEY = os.environ["ANTHROPIC_API_KEY"]
+GROQ_API_KEY = os.environ["GROQ_API_KEY"]
+GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
 
 README_PATH = "README.md"
 START_MARK = "<!-- AGENT-START -->"
@@ -78,8 +77,6 @@ def get_current_section(readme_text):
 
 
 def ask_agent(activity, current_section):
-    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-
     system = """You are an autonomous agent that maintains one small section of \
 Siddharth Duttagupta's GitHub profile README, titled "WHAT I'M UP TO".
 
@@ -108,14 +105,30 @@ Respond ONLY with valid JSON, no markdown fences, no preamble:
         "recent_activity": activity,
     }, indent=2)
 
-    response = client.messages.create(
-        model="claude-sonnet-4-6",
-        max_tokens=500,
-        system=system,
-        messages=[{"role": "user", "content": user_content}],
+    body = json.dumps({
+        "model": GROQ_MODEL,
+        "max_tokens": 500,
+        "response_format": {"type": "json_object"},
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": user_content},
+        ],
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.groq.com/openai/v1/chat/completions",
+        data=body,
+        headers={
+            "Authorization": f"Bearer {GROQ_API_KEY}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
     )
 
-    text = "".join(block.text for block in response.content if block.type == "text")
+    with urllib.request.urlopen(req) as resp:
+        data = json.loads(resp.read())
+
+    text = data["choices"][0]["message"]["content"]
     return json.loads(text)
 
 

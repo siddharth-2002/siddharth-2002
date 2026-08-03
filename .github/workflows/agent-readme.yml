@@ -1,0 +1,39 @@
+name: README Agent
+
+on:
+  schedule:
+    - cron: "0 4 * * *" # daily, ~9:30 AM IST
+  workflow_dispatch: {}
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install anthropic
+
+      - name: Run agent
+        id: agent
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python agent.py
+
+      - name: Commit changes
+        if: steps.agent.outputs.changed == 'true'
+        run: |
+          git config user.name "readme-agent[bot]"
+          git config user.email "readme-agent[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "${{ steps.agent.outputs.commit_message }}"
+          git push

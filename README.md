@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=220&section=header&text=Siddharth%20Duttagupta&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" width="450"/>
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=light" width="450"/>
 
 <h2>⚡ AI Engineer | Full Stack Developer | Builder</h2>
 

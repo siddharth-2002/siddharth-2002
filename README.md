@@ -5,7 +5,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=220&section=header&text=Siddharth%20Duttagupta&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 
 <!-- QUOTE-START -->
-<i>"The only real mistake is the one from which we learn nothing." — Henry Ford</i>
+<i>"A tiny change today brings a dramatically different tomorrow." — Richard Bach</i>
 <!-- QUOTE-END -->
 
 <h2>⚡ AI Engineer | Full Stack Developer | Builder</h2>

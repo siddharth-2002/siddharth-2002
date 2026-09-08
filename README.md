@@ -5,7 +5,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=220&section=header&text=Siddharth%20Duttagupta&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 
 <!-- QUOTE-START -->
-<i>"Life should be touched, not strangled." — Ray Bradbury</i>
+<i>"Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured." — Mark Twain</i>
 <!-- QUOTE-END -->
 
 <h2>⚡ AI Engineer | Full Stack Developer | Builder</h2>

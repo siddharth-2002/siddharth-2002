@@ -5,7 +5,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=220&section=header&text=Siddharth%20Duttagupta&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 
 <!-- QUOTE-START -->
-<i>"Happiness is a gift and the trick is not to expect it, but to delight in it when it comes." — Charles Dickens</i>
+<i>"No matter how qualified or deserving we are, we will never reach a better life until we can imagine it for ourselves and allow ourselves to have it." — Richard Bach</i>
 <!-- QUOTE-END -->
 
 <h2>⚡ AI Engineer | Full Stack Developer | Builder</h2>

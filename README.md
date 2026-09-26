@@ -5,7 +5,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=220&section=header&text=Siddharth%20Duttagupta&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 
 <!-- QUOTE-START -->
-<i>"You change the world by being yourself." — Yoko Ono</i>
+<i>"The more we have the less we own." — Meister Eckhart</i>
 <!-- QUOTE-END -->
 
 <h2>⚡ AI Engineer | Full Stack Developer | Builder</h2>

@@ -5,7 +5,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00F7FF,100:007CF0&height=220&section=header&text=Siddharth%20Duttagupta&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 
 <!-- QUOTE-START -->
-<i>"Life reflects your own thoughts back to you." — Napoleon Hill</i>
+<i>"A man should do his job so well that the living, the dead, and the unborn could do it no better." — Martin Luther King, Jr.</i>
 <!-- QUOTE-END -->
 
 <h2>⚡ AI Engineer | Full Stack Developer | Builder</h2>
